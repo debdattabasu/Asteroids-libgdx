@@ -115,7 +115,7 @@ public class AsteroidActor extends DamageableActor {
 			
 			mNumAsteroidsKilled ++;
 			
-			if(mNumAsteroidsKilled == mNextAsteroidSize) {
+			if(mNumAsteroidsKilled >= mNextAsteroidSize) {
 				mNumAsteroidsKilled = 0;
 				AsteroidActor asteroid = AsteroidsGameScreen.getInstance().addAsteroid();
 				asteroid.calcStartParams();
