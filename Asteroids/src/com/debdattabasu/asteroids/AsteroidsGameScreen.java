@@ -124,7 +124,6 @@ public class AsteroidsGameScreen implements Screen {
 		float y = Gdx.graphics.getHeight() - padding - fontHeight;
 		
 		mHudScoreActor = new TextActor();
-		mHudScoreActor.setText("SCORE : 0");
 		mHudScoreActor.setFontHeight(fontHeight);
 		mHudScoreActor.setPosition(x, y);
 		
@@ -167,7 +166,10 @@ public class AsteroidsGameScreen implements Screen {
 		
 		mScore = 0;
 		mNumLives = 3;
-		
+		mHudScoreActor.setText("SCORE : 0");
+		for(PlayerShipActor life : mHudLivesArray) {
+			life.setVisible(true);
+		}
 	}
 	
 
