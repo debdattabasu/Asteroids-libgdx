@@ -41,7 +41,7 @@ public class AsteroidsGameIntroScreen implements Screen {
 		mStage.addActor(asteroidsTextActor);		
 		
 		TextActor pressAnyTextActor = new TextActor();
-		pressAnyTextActor.setText("PRESS ANY KEY TO START");
+		pressAnyTextActor.setText("A DEMO BY DEBDATTA BASU. PRESS ANY KEY TO START!");
 		pressAnyTextActor.setFontHeight(Gdx.graphics.getWidth() / 40);
 		
 		x = Gdx.graphics.getWidth() /2 - pressAnyTextActor.getWidth()/2;
